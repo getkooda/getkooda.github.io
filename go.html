@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Kooda</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js"></script>
+</head>
+<body>
+<main class="hero">
+  <div class="wrap">
+    <h1>Redirection…</h1>
+    <p class="lead">Si rien ne se passe, <a href="index.html#installer">clique ici</a>.</p>
+  </div>
+</main>
+<script>
+(function () {
+  var cfg = window.KOODA || {};
+  var ua = navigator.userAgent;
+  var isIOS = /iPhone|iPad|iPod/.test(ua) ||
+              (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  var isAndroid = /Android/.test(ua);
+
+  var target = 'index.html#installer';          // ordinateur, ou lien du magasin pas encore prêt
+  if (isIOS && cfg.appStore) target = cfg.appStore;
+  else if (isAndroid && cfg.playStore) target = cfg.playStore;
+
+  location.replace(target);
+})();
+</script>
+<noscript><p class="wrap"><a href="index.html#installer">Installer Kooda</a></p></noscript>
+</body>
+</html>

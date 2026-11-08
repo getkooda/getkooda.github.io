@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Kooda — l'agenda de classe collaboratif</title>
+  <meta name="description" content="Kooda centralise les devoirs, évaluations et sorties de ta classe, avec des rappels. Un agenda partagé par les élèves du secondaire supérieur.">
+  <!-- Quand l'app iOS est publiée, décommente la ligne ci-dessous (remplace XXXXXXXXXX par l'identifiant App Store) :
+  <meta name="apple-itunes-app" content="app-id=XXXXXXXXXX">
+  -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%235b3fe0'/%3E%3Cpath d='M9 16.5l4.5 4.5L23 11' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg class="logo" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="9"/>
+        <path d="M9 16.5l4.5 4.5L23 11" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Kooda
+    </a>
+    <nav>
+      <a href="#fonctionnalites">Fonctionnalités</a>
+      <a href="#comment">Comment ça marche</a>
+      <a href="#installer">Installer</a>
+      <a href="privacy.html">Confidentialité</a>
+      <a href="terms.html">Conditions</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <span class="badge">Phase de test</span>
+      <h1>L'agenda de classe qui se met à jour tout seul</h1>
+      <p class="lead">
+        Devoirs, évaluations et sorties au même endroit, ajoutés par la classe et visibles
+        par ceux que ça concerne. Plus besoin de recopier le tableau ni de relire dix
+        conversations de groupe.
+      </p>
+      <div class="buttons">
+        <a class="btn primary" id="hero-install" href="#installer">Installer Kooda</a>
+        <a class="btn ghost" href="mailto:mariama.dev01@gmail.com?subject=Participer%20au%20test%20de%20Kooda">Participer au test</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="fonctionnalites">
+    <div class="wrap">
+      <h2>Ce que fait Kooda</h2>
+      <p class="sub">Pensée pour les élèves du secondaire supérieur : gymnases, écoles de commerce, de culture générale et écoles techniques.</p>
+      <div class="grid">
+        <div class="card">
+          <div class="icon">📅</div>
+          <h3>Un agenda en trois vues</h3>
+          <p>Jour heure par heure, semaine ou mois, avec une liste des échéances à venir.</p>
+        </div>
+        <div class="card">
+          <div class="icon">👥</div>
+          <h3>Classes, matières et demi-classes</h3>
+          <p>Tu coches seulement les matières que tu suis. Seuls leurs devoirs s'affichent.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🔔</div>
+          <h3>Des rappels qui arrivent</h3>
+          <p>Une semaine, trois jours, un jour ou deux heures avant, selon ce que tu choisis.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🤝</div>
+          <h3>Ajouté par la classe</h3>
+          <p>Chacun peut ajouter un devoir, une évaluation ou une sortie, avec les consignes et le lieu.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🔗</div>
+          <h3>Une matière d'une autre classe</h3>
+          <p>Tu suis maths 1 dans une classe de maths 2 ? Entre le code de la matière : tu ne vois que celle-là.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🔒</div>
+          <h3>Des éléments personnels</h3>
+          <p>Note tes propres échéances : elles ne sont visibles que par toi.</p>
+        </div>
+      </div>
+      <div class="colors">
+        <span class="pill"><span class="dot" style="background:#5b3fe0"></span>Devoir</span>
+        <span class="pill"><span class="dot" style="background:#ff5252"></span>Évaluation</span>
+        <span class="pill"><span class="dot" style="background:#b04dff"></span>Sortie</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="comment" class="alt">
+    <div class="wrap">
+      <h2>Comment ça marche</h2>
+      <p class="sub">Trois étapes, sans créer de compte avec une adresse e-mail.</p>
+      <div class="steps">
+        <div class="step">
+          <h3>Crée ou rejoins une classe</h3>
+          <p>Le délégué crée le groupe et partage un code. Les autres le rejoignent avec ce code.</p>
+        </div>
+        <div class="step">
+          <h3>Choisis tes matières</h3>
+          <p>Tu coches tes matières et ton demi-groupe. Un nouvel arrivant démarre avec tout coché.</p>
+        </div>
+        <div class="step">
+          <h3>Ajoute et reçois</h3>
+          <p>Ajoute ce qu'on vient de dire en classe, et reçois les rappels sur ton téléphone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="installer">
+    <div class="wrap" style="text-align:center">
+      <h2>Installer Kooda</h2>
+      <p class="sub" style="margin-left:auto;margin-right:auto">Disponible sur iPhone et sur Android. Ouvre cette page depuis ton téléphone : le bon bouton s'affiche en haut.</p>
+      <div class="buttons store-buttons">
+        <a class="btn primary" id="btn-ios" href="#installer">App Store</a>
+        <a class="btn primary" id="btn-android" href="#installer">Google Play</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="test" class="alt">
+    <div class="wrap">
+      <div class="notice">
+        <h3>Kooda est en phase de test</h3>
+        <p>
+          L'application évolue vite et peut encore contenir des défauts. Tes retours sont précieux :
+          écris-nous à <a href="mailto:mariama.dev01@gmail.com">mariama.dev01@gmail.com</a>.
+          Disponible sur Android et iOS.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Kooda</span>
+    <span><a href="privacy.html">Politique de confidentialité</a> · <a href="terms.html">Conditions</a> · <a href="mailto:mariama.dev01@gmail.com">Contact</a></span>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script>
+(function () {
+  var cfg = window.KOODA || {};
+  var ua = navigator.userAgent;
+  var isIOS = /iPhone|iPad|iPod/.test(ua) ||
+              (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1); // iPad récent
+  var isAndroid = /Android/.test(ua);
+
+  // Boutons de la section « Installer » : actifs seulement si le lien existe
+  function setStore(id, url, label) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    if (url) {
+      el.href = url;
+      el.textContent = label;
+    } else {
+      el.classList.add('soon');
+      el.removeAttribute('href');
+      el.setAttribute('aria-disabled', 'true');
+      el.textContent = label + ' · bientôt';
+    }
+  }
+  setStore('btn-ios', cfg.appStore, "Télécharger sur l'App Store");
+  setStore('btn-android', cfg.playStore, 'Télécharger sur Google Play');
+
+  // Bouton principal : mène directement au bon magasin selon l'appareil
+  var hero = document.getElementById('hero-install');
+  if (hero) {
+    if (isIOS && cfg.appStore) {
+      hero.href = cfg.appStore;
+      hero.textContent = "Télécharger sur l'App Store";
+    } else if (isAndroid && cfg.playStore) {
+      hero.href = cfg.playStore;
+      hero.textContent = 'Télécharger sur Google Play';
+    }
+  }
+})();
+</script>
+
+</body>
+</html>

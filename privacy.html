@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Politique de confidentialité — Kooda</title>
+  <meta name="description" content="Quelles données Kooda traite, pourquoi, avec qui elles sont partagées et comment exercer tes droits.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%235b3fe0'/%3E%3Cpath d='M9 16.5l4.5 4.5L23 11' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg class="logo" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="9"/>
+        <path d="M9 16.5l4.5 4.5L23 11" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Kooda
+    </a>
+    <nav>
+      <a href="index.html#fonctionnalites">Fonctionnalités</a>
+      <a href="index.html#comment">Comment ça marche</a>
+      <a href="index.html#installer">Installer</a>
+      <a href="privacy.html">Confidentialité</a>
+      <a href="terms.html">Conditions</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <article class="doc">
+    <h1>Politique de confidentialité</h1>
+    <p class="meta">Dernière mise à jour : 8 novembre 2026 · Application Kooda</p>
+
+    <h2>Préambule</h2>
+    <p>
+      La présente Politique de Confidentialité informe les utilisateurs de la manière dont l'application
+      Kooda et son infrastructure collectent, protègent et traitent leurs données. Kooda s'engage à
+      respecter la législation en vigueur, notamment la Loi fédérale suisse sur la protection des données
+      (LPD) et, pour les personnes concernées dans l'Union européenne, le Règlement général sur la
+      protection des données (RGPD).
+    </p>
+
+    <div class="summary">
+      <h2>L'essentiel</h2>
+      <ul>
+        <li>Kooda ne demande ni vrai nom, ni adresse e-mail, ni numéro de téléphone.</li>
+        <li>Pas de localisation GPS, pas d'accès aux contacts ni aux photos, pas de publicité.</li>
+        <li>Le pseudo choisi est visible par les membres de tes groupes.</li>
+        <li>Les données ne sont ni vendues ni utilisées pour du profilage.</li>
+        <li>Tu peux supprimer ton compte et tes données à tout moment, directement dans l'application.</li>
+      </ul>
+    </div>
+
+    <h2>Article 1 : Responsable du traitement des données</h2>
+    <p>
+      Kooda est développée et exploitée par sa développeuse principale
+      (<a href="mailto:mariama.dev01@gmail.com">mariama.dev01@gmail.com</a>), responsable du traitement
+      des données. Toute demande d'information, d'accès, de rectification ou de suppression peut être
+      adressée à cette adresse. Nous répondons en principe dans un délai de 30 jours.
+    </p>
+
+    <h2>Article 2 : Données traitées et authentification</h2>
+    <p>
+      Kooda applique le principe de minimisation des données. Aucun compte classique (e-mail, mot de
+      passe) n'est requis.
+    </p>
+    <ul>
+      <li><strong>Authentification anonyme :</strong> Kooda utilise Firebase Authentication en mode anonyme. Ce service génère un identifiant technique aléatoire, sans lien avec ton identité civile.</li>
+      <li><strong>Pseudo :</strong> un pseudo (qui peut être un prénom), choisi librement, permet d'afficher qui est membre d'un groupe et qui a ajouté un devoir.</li>
+      <li><strong>Groupes et choix :</strong> classes rejointes, sous-groupes et demi-groupes cochés, rôle (membre ou admin), date d'arrivée.</li>
+      <li><strong>Contenus ajoutés :</strong> titre, consignes, matière, lieu (texte saisi à la main), dates, heures, durée, rappels choisis, auteur.</li>
+      <li><strong>Jeton de notification :</strong> identifiant fourni par Google (Android) ou Apple (iOS) pour envoyer les notifications.</li>
+      <li><strong>Signalements et blocages :</strong> quand tu signales un contenu ou un membre, nous enregistrons le motif, l'élément concerné, ton identifiant et la date. Quand tu bloques un membre, son identifiant est enregistré dans ton profil.</li>
+      <li><strong>Données techniques :</strong> adresse IP et journaux de connexion, traités par Google lors des échanges avec ses serveurs, pour faire fonctionner et sécuriser le service.</li>
+    </ul>
+    <p>
+      Nous ne collectons pas : vrai nom, e-mail, numéro de téléphone, position GPS, contacts, photos, ni
+      aucune donnée à des fins publicitaires. Le thème d'affichage choisi reste enregistré sur ton
+      appareil.
+    </p>
+    <p>
+      Comme il n'y a ni e-mail ni mot de passe, une désinstallation ou un changement de téléphone ne
+      permet pas de retrouver l'ancien compte : tu peux rejoindre à nouveau tes groupes avec leur code.
+    </p>
+
+    <h2>Article 3 : Stockage des données (Firestore)</h2>
+    <p>
+      Les données de l'agenda sont hébergées chez Google (Firebase, Cloud Firestore). Les échanges sont
+      chiffrés en transit (HTTPS/TLS) et les données sont chiffrées au repos par Google. Les devoirs
+      d'une classe sont affichés aux seuls membres concernés, selon les sous-groupes et demi-groupes
+      qu'ils ont cochés. L'accès à la base de données est réservé aux utilisateurs connectés de
+      l'application, au développeur et au service Firebase.
+    </p>
+
+    <h2>Article 4 : Notifications</h2>
+    <p>Avec ton autorisation, Kooda t'envoie :</p>
+    <ul>
+      <li>des rappels avant une échéance (selon les rappels choisis pour le devoir) ;</li>
+      <li>une annonce quand un devoir est ajouté dans un groupe ou une matière qui te concerne ;</li>
+      <li>pour l'admin d'un groupe, un message quand quelqu'un rejoint le groupe.</li>
+    </ul>
+    <p>
+      Un programme automatisé (GitHub Actions), déclenché à intervalles réguliers par le service
+      cron-job.org, lit les échéances et envoie ces notifications via Firebase Cloud Messaging et Apple
+      Push Notification service. GitHub exécute ce programme sans conserver de données : ses journaux
+      contiennent des identifiants techniques, sans le contenu des devoirs. cron-job.org ne reçoit
+      aucune donnée d'utilisateur. Tu peux retirer l'autorisation aux notifications à tout moment dans
+      les réglages de ton téléphone.
+    </p>
+
+    <h2>Article 5 : Partage avec des tiers</h2>
+    <p>
+      Les données ne font l'objet d'aucun profilage, d'aucune vente et d'aucun transfert à des régies
+      publicitaires. Elles sont uniquement traitées par les prestataires techniques nécessaires au
+      service : Google (Firebase Authentication, Firestore, Cloud Messaging), Apple (APNs), GitHub
+      (exécution du programme de notifications) et cron-job.org (déclenchement). Google, Apple et GitHub
+      peuvent traiter des données hors de Suisse, notamment aux États-Unis, avec des garanties reconnues
+      (clauses contractuelles types, cadres de protection des données entre la Suisse ou l'Europe et les
+      États-Unis). Kooda ne contient aucun SDK publicitaire.
+    </p>
+
+    <h2>Article 6 : Qui voit quoi</h2>
+    <ul>
+      <li>Les membres d'un groupe voient la liste des membres (pseudos) et les devoirs qui les concernent.</li>
+      <li>L'admin d'un groupe (la personne qui l'a créé) peut renommer le groupe et ses sous-groupes, supprimer le groupe, ses devoirs, et retirer un membre.</li>
+      <li>Une personne qui n'a rejoint qu'une matière d'une autre classe ne voit que les devoirs de cette matière.</li>
+      <li>Les éléments personnels ne sont visibles que par leur auteur.</li>
+      <li>Les blocages ne sont connus que de la personne qui bloque.</li>
+      <li>Les signalements ne sont lus que par le développeur, qui peut supprimer un contenu ou exclure un membre.</li>
+      <li>Le développeur peut techniquement accéder à la base de données pour la maintenance et le dépannage, et n'y recourt que pour cela.</li>
+    </ul>
+
+    <h2>Article 7 : Conservation et suppression</h2>
+    <ul>
+      <li>Les devoirs sont conservés jusqu'à leur suppression par leur auteur ou par l'admin du groupe.</li>
+      <li>Quand tu quittes un groupe, tu disparais de sa liste de membres.</li>
+      <li>Un groupe supprimé par son admin entraîne la suppression de ses sous-groupes, devoirs et liste de membres.</li>
+      <li>Les enregistrements techniques d'envoi des rappels sont effacés environ 24 heures après l'échéance du devoir.</li>
+      <li>Les signalements sont conservés le temps de leur traitement, puis supprimés.</li>
+      <li>Ton compte et ton pseudo sont conservés tant que tu ne les supprimes pas. Pendant la phase de test, les comptes inactifs ne sont pas supprimés automatiquement.</li>
+    </ul>
+    <p>
+      <strong>Suppression du compte dans l'application :</strong> ouvre l'onglet « Groupe », puis
+      « Mon compte », puis « Supprimer mon compte ». Sont alors supprimés : ton compte, ton pseudo, tes
+      appartenances à des groupes, ton jeton de notification, tes choix de matières et tes éléments
+      personnels. Si tu es admin d'un groupe, ce groupe est supprimé pour tous ses membres. Les devoirs
+      que tu as ajoutés à un groupe dont tu n'es pas l'admin sont conservés pour les autres membres, sans
+      aucun lien avec toi après la suppression ; supprime-les avant si tu préfères qu'ils disparaissent.
+    </p>
+    <p>
+      Tu peux aussi demander la suppression par e-mail à
+      <a href="mailto:mariama.dev01@gmail.com">mariama.dev01@gmail.com</a>, avec l'objet
+      « Suppression de mon compte Kooda ».
+    </p>
+
+    <h2>Article 8 : Tes droits</h2>
+    <p>
+      Tu peux demander l'accès aux données qui te concernent, leur rectification (tu peux changer ton
+      pseudo dans l'application), leur effacement, la limitation ou l'opposition à leur traitement, et
+      leur transmission dans un format courant. Écris à
+      <a href="mailto:mariama.dev01@gmail.com">mariama.dev01@gmail.com</a>. Tu peux aussi adresser une
+      réclamation au Préposé fédéral à la protection des données et à la transparence
+      (<a href="https://www.edoeb.admin.ch" rel="noopener">edoeb.admin.ch</a>) ou, dans l'Union
+      européenne, à l'autorité de protection des données de ton pays.
+    </p>
+
+    <h2>Article 9 : Mineurs</h2>
+    <p>
+      Kooda s'adresse aux élèves du secondaire supérieur. Si tu as moins de 16 ans, nous te recommandons
+      d'en parler à tes parents ou à ton représentant légal avant d'utiliser l'application. Un parent ou
+      représentant légal peut nous écrire pour exercer les droits décrits ci-dessus au nom de son enfant.
+    </p>
+
+    <h2>Article 10 : Base légale et sécurité</h2>
+    <p>
+      L'installation volontaire de l'application, la saisie du code d'un groupe et du pseudo valent
+      consentement au traitement des données nécessaires à l'organisation scolaire de l'agenda. Le trafic
+      réseau est chiffré (HTTPS). Aucun système n'est totalement infaillible : en cas d'incident
+      susceptible de te porter préjudice, nous t'en informerons et préviendrons les autorités
+      compétentes si la loi l'exige.
+    </p>
+
+    <h2>Article 11 : Modifications</h2>
+    <p>
+      Cette politique peut être mise à jour, par exemple quand Kooda gagne une fonctionnalité. La date en
+      haut du document indique la dernière version. En cas de changement important, tu seras informé dans
+      l'application.
+    </p>
+
+    <h2>Article 12 : Conditions d'utilisation</h2>
+    <p>
+      Les règles de conduite, le signalement et le blocage sont décrits dans les
+      <a href="terms.html">conditions d'utilisation</a> de Kooda.
+    </p>
+
+    <h2>Article 13 : Ce site</h2>
+    <p>
+      Ce site n'utilise ni cookies, ni outil de statistiques, ni police ou script externe. Il est hébergé
+      sur GitHub Pages : GitHub peut enregistrer l'adresse IP des visiteurs dans ses journaux techniques.
+    </p>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Kooda</span>
+    <span><a href="index.html">Accueil</a> · <a href="terms.html">Conditions</a> · <a href="mailto:mariama.dev01@gmail.com">Contact</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
