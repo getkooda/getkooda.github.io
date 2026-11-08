@@ -7,3 +7,8 @@ window.KOODA = {
   appStore: '',
   playStore: ''
 };
+
+window.KOODA = {
+  appStore: "https://apps.apple.com/ch/app/kooda/id6822682596",
+  playStore: "https://linktr.ee/kooda_testers"
+};
